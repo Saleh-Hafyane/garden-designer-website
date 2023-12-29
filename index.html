@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO meta tags -->
+    <meta
+      name="description"
+      content="Lucky Shrub Garden Design specializes in creating stunning garden designs, providing expert maintenance, and offering a variety of indoor and outdoor plants. Transform any space into an oasis with Lucky Shrub."
+    />
+    <meta
+      name="keywords"
+      content="garden design, landscaping, plant nursery, gardening, garden maintenance"
+    />
+    <meta name="author" content="Lucky Shrub Garden Design" />
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Lucky Shrub Garden Design" />
+    <meta
+      property="og:description"
+      content="Transform any space into an oasis you can be proud of with Lucky Shrub Garden Design."
+    />
+    <meta property="og:image" content="path-to-your-social-media-image.jpg" />
+    <meta property="og:url" content="https://www.yourwebsite.com" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter Card meta tags-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lucky Shrub Garden Design" />
+    <meta
+      name="twitter:description"
+      content="Transform any space into an oasis you can be proud of with Lucky Shrub Garden Design."
+    />
+    <meta name="twitter:image" content="path-to-your-twitter-image.jpg" />
+    <!-- Page title -->
+    <title>Lucky Shrub Garden Design</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="images/logo.png" alt="Lucky Shrub Logo" />
+    </header>
+    <nav class="nav-links" id="myTopnav">
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="promo-text">
+        <article>
+          <h1>Your Oasis Awaits</h1>
+          <p>
+            Transform any space into an oasis you can be proud of with Lucky
+            Shrub.
+          </p>
+        </article>
+      </section>
+      <section class="services reveal" id="services">
+        <article>
+          <img class="card-img img-1" src="images/garden-design.jpg" alt="" />
+          <h3>Garden Design</h3>
+          <p>
+            Our garden design services will transform your outdoor space into a
+            breathtaking oasis.
+          </p>
+        </article>
+        <article>
+          <img class="card-img img-2" src="images/maintenance.jpg" alt="" />
+          <h3>Maintenance</h3>
+          <p>
+            We offer expert garden maintenance to keep your outdoor paradise in
+            perfect condition.
+          </p>
+        </article>
+        <article>
+          <img class="card-img img-3" src="images/plant-nursery.jpg" alt="" />
+          <h3>Plant Nursery</h3>
+          <p>
+            Visit our small plant nursery for a wide selection of indoor and
+            outdoor plants to enhance your garden.
+          </p>
+        </article>
+      </section>
+      <section class="about-us reveal" id="about">
+        <h2>About Us</h2>
+        <p>
+          Lucky Shrub, based in Tucson, Arizona, is a medium-sized garden design
+          firm specializing in creating stunning garden designs, providing
+          expert maintenance, and offering a variety of indoor and outdoor
+          plants through our small plant nursery.
+        </p>
+        <p>
+          Founded by the passionate plant lovers, Jason and Maria, Lucky Shrub
+          brings together artistic vision and horticultural expertise to craft
+          beautiful outdoor spaces.
+        </p>
+      </section>
+      <section class="contact-us reveal" id="contact">
+        <h2>Contact Us</h2>
+
+        <form method="post" action="submit.php">
+          <input
+            class="input"
+            type="text"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+          <input
+            class="input"
+            type="email"
+            name="email"
+            placeholder="Your email"
+            required
+          />
+          <textarea
+            class="input"
+            name="message"
+            placeholder="Your message"
+            rows="10"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Footer Logo" />
+      </div>
+      <div class="copywriting">
+        <p>&copy; 2023 Lucky Shrub Garden Design. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
