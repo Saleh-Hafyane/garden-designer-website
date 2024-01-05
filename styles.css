@@ -27,7 +27,7 @@ p {
 
 .header > img {
   display: block;
-  max-width: 15rem;
+  max-width: 14rem;
   margin: 0 auto;
 }
 
@@ -51,14 +51,30 @@ p {
 .nav-links .icon {
   display: none;
 }
-
 .promo-text {
+  margin-top: 10rem;
+
   color: var(--text-color);
 }
-
 .promo-text h1 {
   font-size: 4rem;
   color: var(--primary-color);
+}
+.promo-text div {
+  margin: 6rem auto;
+}
+.promo-text a {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  margin-top: 10rem;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.promo-text a:hover {
+  background-color: var(--secondary-color);
+  color: #fefae0;
 }
 
 .services {
@@ -73,7 +89,6 @@ p {
 }
 
 .services article {
-  
   flex: 30%;
   margin-top: 2rem;
   height: 46rem;
@@ -185,17 +200,20 @@ p {
   padding: 1rem 0;
   align-self: center;
 }
-
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 2s all ease;
-}
-
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1;
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    scale: 0.8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+  }
+  @keyframes fade-in {
+    to {
+      scale: 1;
+      opacity: 1;
+    }
+  }
 }
 
 @media (max-width: 925px) {
